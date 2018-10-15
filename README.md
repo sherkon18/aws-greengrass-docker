@@ -34,7 +34,15 @@ docker build -t aws-greengrass .
    ```
    docker-compose up
    ```
+#### Tested in the following enviornments ####
 
+- AWS EC2 Ubuntu instance
+
+#### Future Testing ####
+- Intel NUC
+- Dell Laptop
+- RPI
+   
 
 #### For MacOS and Windows users
 You _can_ build the image on MacOS and Windows, but _can not_ run it. 
