@@ -6,6 +6,15 @@ The trick to running it in Docker is to use `devicemapper` storage driver instea
 
 > **CAUTION:** when you change the Docker storage driver, you won't see the images and containers created with the old storage driver, until you change it back. [Details here](https://docs.docker.com/storage/storagedriver/select-storage-driver/#check-your-current-storage-driver)
 
+Edit /etc/docker/daemon.json with "sudo nano /etc/docker/daemon.json"
+
+Change the file to the following:
+{
+    "storage-driver":"devicemapper"
+}
+
+
+
 ### Build the AWS Greengras image
 
 ```
